@@ -1,6 +1,6 @@
 # di4r-training
 
-This repository contains the exercises for the training event on FedCloud at the <a href="http://www.digitalinfrastructures.eu/"> Digital Infrastructures for Research (DI4R) conference.
+This repository contains the exercises for the training event on FedCloud at the <a href="http://www.digitalinfrastructures.eu/"> Digital Infrastructures for Research (DI4R)</a> conference.
 
 ## Requirements
 
