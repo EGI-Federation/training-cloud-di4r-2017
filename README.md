@@ -1,2 +1,2 @@
-# d4ir-training
-Material for D4IR training event
+# di4r-training
+Material for DI4R training event
