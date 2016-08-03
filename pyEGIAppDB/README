@@ -1,0 +1,5 @@
+
+pyEGIAppDB is a python script to contact the EGI Application Database [1] 
+and get the list of all the providers that have subscribed a given VO. 
+
+[1] https://appdb.egi.eu
