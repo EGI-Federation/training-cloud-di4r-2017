@@ -4,7 +4,7 @@ Api-VOMS-CANL is a Java binding for the Virtual Organization Membership Service 
 
 ## Compile and Run
 
-Edit the source code in VOMSProxyInit.java and specify your preferred settings:
+Edit and specify your settigns in the ```VOMSProxyInit.java``` source code:
 
 ```
 [..]
