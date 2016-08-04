@@ -22,6 +22,18 @@ List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Chang
 String OCCI_PUBLICKEY_NAME = "centos"; // <= Change here!
 ```
 
+Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code to create a new ```storage``` resource:
+```
+[..]
+String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+
+List<String> RESOURCE = Arrays.asList("storage"); // <= Change here! (e.g.: compute or storage)
+
+public static List<String> ATTRIBUTES = 
+    Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
+```
+
 Compile and package with maven:
 ```
 $ mvn compile && mvn package
