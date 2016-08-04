@@ -8,7 +8,7 @@ Edit the source code in `src/main/java/it/infn/ct/Exercise1.java` to use your pr
 ```
 [..]
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
-String VO = "training.egi.eu";                                   // <= Change here!
+String VO = "training.egi.eu";  // <= Change here!
 ```
 
 Compile and package with maven:
