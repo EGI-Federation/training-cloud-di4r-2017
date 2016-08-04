@@ -29,7 +29,7 @@ $ mvn compile && mvn package
 
 Run (you may redirect the output to a file):
 ```
-$ java –jar target/jocci-describe-resources-1.0-jar-with-dependencies.jar
+$ java –jar target/jocci-create-resource-1.0-jar-with-dependencies.jar
 ```
 
 ## Dependencies
