@@ -28,9 +28,9 @@ $ java –jar target/jocci-describe-resources-1.0-jar-with-dependencies.jar
 
 ## Dependencies
 
-jEGIAppDB uses:
-- Jersey-client (v1.8)
-- xml-apis (v2.0.2)
+jOCCI-describe-resources uses:
+- jocci-api (v0.2.5)
+- slf4j-jdk14 (v1.7.12)
 
 These are already included in the Maven pom.xml file and automatically downloaded when building.
 
@@ -38,14 +38,15 @@ You can also add them to your projects with:
 
 ```
     <dependency>
-        <groupId>com.sun.jersey</groupId>
-        <artifactId>jersey-client</artifactId>
-        <version>1.8</version>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>1.7.12</version>
     </dependency>
 
     <dependency>
-        <groupId>xml-apis</groupId>
-        <artifactId>xml-apis</artifactId>
-        <version>2.0.2</version>
+        <groupId>cz.cesnet.cloud</groupId>
+        <artifactId>jocci-api</artifactId>
+        <version>0.2.5</version>
+        <scope>compile</scope>
     </dependency>
 ```
