@@ -17,6 +17,20 @@ the EGI cloud providers. During the event you will be given a temporary credenti
 permanent credentials, check the 
 [Federated Cloud User Support](https://wiki.egi.eu/wiki/Federated_Cloud_user_support#Access) page.
 
+## Available Exercises
+
+This repository includes the following exercises:
+- [Querying AppDB with Python](pyEGIAppDB/README.md)
+- [Querying AppDB with Java](jEGIAppDB/README.md)
+- Using jOCCI to:
+    - [Dump OCCI model](jOCCI-dump-model/README.md)
+    - [Create OCCI resources](jOCCI-create-resources/README.md)
+    - [List OCCI resources](jOCCI-list-resources/README.md)
+    - [Describe OCCI resources](jOCCI-describe-resources/README.md)
+    - [Attach OCCI resources](jOCCI-attach-resources/README.md)
+    - [Delete OCCI resources](jOCCI-delete-resources/README.md)
+- [Create a VOMS proxy from certificate](Api-VOMS-CANL/README.md)
+
 ## Contribute
 - Fork it
 - Create a branch (git checkout -b my_markup)
