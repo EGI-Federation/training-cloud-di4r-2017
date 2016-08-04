@@ -28,7 +28,7 @@ jEGIAppDB uses:
 - xml-apis (v2.0.2)
 
 These are already included in the Maven pom.xml file and automatically downloaded when building.
-You can aslo add them to your projects with:
+You can also add them to your projects with:
 
 ```
     <dependency>
