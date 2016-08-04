@@ -5,7 +5,7 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 ## Compile and Run
 
-Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code:
+Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code to create a new ```compute``` resource:
 ```
 [..]
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
