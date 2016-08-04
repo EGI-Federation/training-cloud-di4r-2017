@@ -1,5 +1,6 @@
 # jOCCI-list-resources
 This is a Java library to render <a href="http://occi-wg.org/about/specification/">Open Cloud Computing Interface (OCCI)</a> queries.
+
 Detailed documentation is available in the project <a href="https://github.com/EGI-FCTF/jOCCI-api/wiki">wiki</a>.
 
 ## Compile and Run
