@@ -1,6 +1,0 @@
-language: java
-
-notifications:
-  email:
-    recipients:
-        - giuseppe.larocca@egi.eu
