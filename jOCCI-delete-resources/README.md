@@ -35,13 +35,17 @@ Run (you may redirect the output to a file):
 $ java –jar target/jocci-delete-resources-1.0-jar-with-dependencies.jar
 ```
 
-<h2>Requirements</h2>
-- JDK 7+
-- Maven
+## Dependencies
 
-<h2>Install</h2>
-If using Maven, add the following dependencies to your pom.xml file:
+jOCCI-delete-resources uses:
+- jocci-api (v0.2.5)
+- slf4j-jdk14 (v1.7.12)
 
+These are already included in the Maven pom.xml file and automatically downloaded when building.
+
+You can also add them to your projects with:
+
+```
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-jdk14</artifactId>
@@ -54,3 +58,4 @@ If using Maven, add the following dependencies to your pom.xml file:
         <version>0.2.5</version>
         <scope>compile</scope>
     </dependency>
+```
