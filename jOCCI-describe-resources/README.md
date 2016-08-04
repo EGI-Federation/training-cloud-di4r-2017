@@ -5,7 +5,7 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 ## Compile and Run
 
-Edit the source code in `src/main/java/it/infn/ct/Exervice3.java` to use your preferred VO:
+Edit your settings in the `src/main/java/it/infn/ct/Exercise3.java` source code:
 ```
 [..]
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
