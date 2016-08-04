@@ -1,3 +1,6 @@
+[![Travis](http://img.shields.io/travis/csgf/jsaga-adaptor-jocci/master.png)](https://travis-ci.org/EGI-FCTF/jEGIAppDB)
+[![License](https://img.shields.io/github/license/csgf/jsaga-adaptor-jocci.svg?style?flat)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+
 # jEGIAppDB
 jEGIAppDB is an open-source Java application to gather from the [EGI Application Database](https://appdb.egi.eu/)
 the list of cloud providers that have subscribed a given VO. 
