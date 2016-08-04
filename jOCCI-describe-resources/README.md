@@ -11,7 +11,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise3.java` source code:
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
-// [ *Describing* available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
+// [ Available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
 List<String> RESOURCE = Arrays.asList("compute",
         "https://carach5.ics.muni.cz:11443/compute/74374"); // <= Change here!
 ```
