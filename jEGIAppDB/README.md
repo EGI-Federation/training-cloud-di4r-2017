@@ -1,7 +1,7 @@
 # jEGIAppDB
 jEGIAppDB is an open-source Java application to gather from the [EGI Application Database](https://appdb.egi.eu/)
-the list of cloud providers that have subscribed a given VO. For each provider the available Virtual Appliances
-and resource templates will be shown.
+the list of cloud providers that have subscribed a given VO. 
+For each provider the available Virtual Appliances and resource templates will be shown.
 
 ## Compile and Run
 
