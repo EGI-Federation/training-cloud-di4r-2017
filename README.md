@@ -20,16 +20,16 @@ permanent credentials, check the
 ## Available Exercises
 
 This repository includes the following exercises:
-- [Querying AppDB with Python](pyEGIAppDB/README.md)
-- [Querying AppDB with Java](jEGIAppDB/README.md)
+- [Querying AppDB with Python](pyEGIAppDB)
+- [Querying AppDB with Java](jEGIAppDB)
 - Using jOCCI to:
-    - [Dump OCCI model](jOCCI-dump-model/README.md)
-    - [Create OCCI resources](jOCCI-create-resources/README.md)
-    - [List OCCI resources](jOCCI-list-resources/README.md)
-    - [Describe OCCI resources](jOCCI-describe-resources/README.md)
-    - [Attach OCCI resources](jOCCI-attach-resources/README.md)
-    - [Delete OCCI resources](jOCCI-delete-resources/README.md)
-- [Create a VOMS proxy from certificate](Api-VOMS-CANL/README.md)
+    - [Dump OCCI model](jOCCI-dump-model)
+    - [Create OCCI resources](jOCCI-create-resources)
+    - [List OCCI resources](jOCCI-list-resources)
+    - [Describe OCCI resources](jOCCI-describe-resources)
+    - [Attach OCCI resources](jOCCI-attach-resources)
+    - [Delete OCCI resources](jOCCI-delete-resources)
+- [Create a VOMS proxy from certificate](Api-VOMS-CANL)
 
 ## Contribute
 - Fork it
