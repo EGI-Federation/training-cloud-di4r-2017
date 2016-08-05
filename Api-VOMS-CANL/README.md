@@ -4,7 +4,7 @@ Api-VOMS-CANL is sample creation of a Virtual Organization Membership Service (V
 
 ## Compile and Run
 
-Edit and specify your settigns in the ```VOMSProxyInit.java``` source code:
+Edit and specify your settigns in the ```src/main/java/it/infn/ct/VOMSProxyInit.java``` source code:
 
 ```
 [..]
@@ -27,6 +27,7 @@ $ java –jar target/jVOMS-Proxy-Init-1.0-jar-with-dependencies.jar
 Api-VOMS-CANL uses:
 - voms-clients (v3.0.6)
 - log4j (v1.2.17)
+
 These are already included in the Maven pom.xml file and automatically downloaded when building.
 
 You can also add them to your projects with:
