@@ -1,6 +1,6 @@
 # Api-VOMS-CANL
 
-Api-VOMS-CANL is a Java binding for the Virtual Organization Membership Service (VOMS) API. The application contact the VOMS service to generate RFC or full-legacy X.509 proxy certificates.
+Api-VOMS-CANL is sample creation of a Virtual Organization Membership Service (VOMS) proxy using the VOMS client. The application contact the VOMS service to generate RFC or full-legacy X.509 proxy certificates.
 
 ## Compile and Run
 
@@ -13,22 +13,33 @@ String VOMS_PROXY_FILEPATH = "/tmp/x509up_u1000"; // <= Change here!
 String VOMS_LIFETIME = "24:00";
 ```
 
-Compile and run the source code:
+Compile and package with maven:
 
-```
-./compile.sh
-```
+$ mvn compile && mvn package
+
+Run:
+
+$ java –jar target/jVOMS-Proxy-Init-1.0-jar-with-dependencies.jar
+
 
 ## Dependencies
 
 Api-VOMS-CANL uses:
-- bcmail-jdk16-1.46.jar
-- bcpkix-jdk15on-1.50.jar
-- bcprov-jdk16-1.46.jar
-- canl-1.3.1.jar
-- cog-jglobus.jar
-- commons-cli-1.2.jar
-- commons-io-2.4.jar
-- log4j-1.2.14.jar
-- voms-api-java-3.0.3.jar
-- voms-clients-3.0.4.jar
+- voms-clients (v3.0.6)
+- log4j (v1.2.17)
+These are already included in the Maven pom.xml file and automatically downloaded when building.
+
+You can also add them to your projects with:
+```
+<dependency>
+    <groupId>org.italiangrid</groupId>
+    <artifactId>voms-clients</artifactId>
+    <version>3.0.6</version>
+</dependency>
+
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+```

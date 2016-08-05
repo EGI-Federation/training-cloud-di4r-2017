@@ -15,6 +15,8 @@
  *
  */
 
+package it.infn.ct;
+
 import org.italiangrid.voms.clients.VomsProxyInit;
 
 import org.apache.log4j.Logger;
