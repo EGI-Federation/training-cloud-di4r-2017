@@ -38,7 +38,7 @@ public class jEGIAppDB
 {
 
     public static String endpoint = "appdb.egi.eu";
-    public static String VO = "training.egi.eu"; 	// <= Change here!
+    public static String VO = "vo.access.egi.eu"; 	// <= Change here!
 
 
     public static String get_OCCI_ID(String id)
@@ -127,7 +127,10 @@ public class jEGIAppDB
                                 String template = element.getElementsByTagName("provider_template:resource_name")
                                         .item(0).getTextContent();
 
-                                System.out.println("\t" + template);
+				if (template.startsWith("http://")) 
+					template=template.substring( template.indexOf("resource_tpl"), template.length() );
+                                
+				System.out.println("\t" + template);
                         }
                 }
 
@@ -290,7 +293,7 @@ public class jEGIAppDB
                         get_provider_metadata(sitenameID);
 
                         // Get available resource(s) template
-                        System.out.println("\n ~ Listing available resource(s) template \n");
+                        System.out.println("\n ~ Listing available resource(s) templates \n");
                         get_resource(sitenameID);
 
 			// Get available VA images
