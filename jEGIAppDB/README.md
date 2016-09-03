@@ -5,7 +5,9 @@ For each provider the available Virtual Appliances and resource templates will b
 
 ## Compile and Run
 
-```cd jEGIAppDB/```
+Access the maven project
+
+```cd di4r-training/jEGIAppDB/```
 
 Edit the source code in `src/main/java/it/infn/ct/jEGIAppDB.java` to use your preferred VO:
 ```
