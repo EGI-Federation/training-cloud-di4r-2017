@@ -13,9 +13,9 @@ contains a ready to use environment to compile these exercises and several relat
 (e.g. rOCCI command line interface)
 
 You will need a valid X.509 certificate and to belong to one of the Virtual Organisations supported at
-the EGI cloud providers. During the event you will be given a temporary credential, for obtaining 
-permanent credentials, check the 
-[Federated Cloud User Support](https://wiki.egi.eu/wiki/Federated_Cloud_user_support#Access) page.
+the EGI cloud providers. During the event you will be given a temporary credential.
+
+To obtain a permanent credentials, check the [Federated Cloud User Support](https://wiki.egi.eu/wiki/Federated_Cloud_user_support#Access) page.
 
 ## Available Exercises
 
