@@ -39,6 +39,11 @@ List<String> RESOURCE = Arrays.asList("storage");
 
 public static List<String> ATTRIBUTES = 
     Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
+    
+// Set to null not used variables.
+String OCCI_PUBLICKEY_NAME = "";
+List<String> CONTEXT = new ArrayList<String>();
+List<String> MIXIN = new ArrayList<String>();
 ```
 
 Compile and package with maven:
