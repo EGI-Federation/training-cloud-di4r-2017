@@ -11,7 +11,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code 
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
-List<String> RESOURCE = Arrays.asList("compute"); // <= Change here! (e.g.: compute or storage)
+List<String> RESOURCE = Arrays.asList("compute");
 
 List<String> MIXIN =
 Arrays.asList("resource_tpl#medium", // <= Change here!
@@ -32,7 +32,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code 
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
-List<String> RESOURCE = Arrays.asList("storage"); // <= Change here! (e.g.: compute or storage)
+List<String> RESOURCE = Arrays.asList("storage"); 
 
 public static List<String> ATTRIBUTES = 
     Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
