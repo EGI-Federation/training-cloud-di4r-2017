@@ -11,6 +11,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code 
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
+// *CREATE* a new virtual appliance (aka VM) with contextualisation (public_key)
 List<String> RESOURCE = Arrays.asList("compute");
 
 List<String> MIXIN =
@@ -26,12 +27,14 @@ List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Chang
 String OCCI_PUBLICKEY_NAME = "centos";
 ```
 
+
 Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code to create a new ```storage``` resource:
 ```
 [..]
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
+// *CREATE* a new block storage
 List<String> RESOURCE = Arrays.asList("storage"); 
 
 public static List<String> ATTRIBUTES = 
