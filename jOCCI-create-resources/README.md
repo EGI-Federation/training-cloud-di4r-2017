@@ -23,7 +23,7 @@ Arrays.asList("public_key=file:/home/userX/.ssh/id_rsa.pub", // <= Change here!
 
 List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
 
-String OCCI_PUBLICKEY_NAME = "centos"; // <= Change here!
+String OCCI_PUBLICKEY_NAME = "centos";
 ```
 
 Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code to create a new ```storage``` resource:
