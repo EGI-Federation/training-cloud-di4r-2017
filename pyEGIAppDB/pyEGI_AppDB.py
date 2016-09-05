@@ -75,13 +75,11 @@ def get_resource(id):
                 data = appdb_call('/rest/1.0/va_providers/%s' %id)
 
                 for resource_tpl in data['appdb:appdb']['virtualization:provider']['provider:template']:
-                        #print "\t%s" %resource_tpl['provider_template:resource_name']
                         if resource_tpl['provider_template:resource_name'].startswith("http://"):
-				resource_tpl = resource_tpl['provider_template:resource_name'].split("resource_tpl#",1)
+				resource_tpl = resource_tpl['provider_template:resource_name'].split("#",1)
 			        print "\tresource_tpl#%s" %resource_tpl[1]
 			else:
                         	print "\t%s" %resource_tpl['provider_template:resource_name']
-
         except:
                 print ""
 
