@@ -38,7 +38,7 @@ public class jEGIAppDB
 {
 
     public static String endpoint = "appdb.egi.eu";
-    public static String VO = "vo.access.egi.eu"; 	// <= Change here!
+    public static String VO = "training.egi.eu"; 	// <= Change here!
 
 
     public static String get_OCCI_ID(String id)
@@ -128,9 +128,11 @@ public class jEGIAppDB
                                         .item(0).getTextContent();
 
 				if (template.startsWith("http://")) 
-					template=template.substring( template.indexOf("resource_tpl"), template.length() );
-                                
-				System.out.println("\t" + template);
+					//template=template.substring( template.indexOf("resource_tpl"), template.length() );
+                                        template=template.substring( template.indexOf("#"), template.length() );
+
+                                if (template.contains("resource_tpl")) System.out.println("\t" + template);
+                                else System.out.println("\t resource_tpl" + template);
                         }
                 }
 
