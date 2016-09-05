@@ -19,7 +19,7 @@ Arrays.asList("resource_tpl#medium", // <= Change here!
 
 List<String> CONTEXT =
 Arrays.asList("public_key=file:/home/userX/.ssh/id_rsa.pub", // <= Change here!
-        "user_data=file:/home/userX/APIs/jOCCI-create-resources/contextualisation.txt"); // <= Change here!
+"user_data=file:/home/userX/APIs/jOCCI-create-resources/contextualisation.txt"); // <= Change here!
 
 List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
 
