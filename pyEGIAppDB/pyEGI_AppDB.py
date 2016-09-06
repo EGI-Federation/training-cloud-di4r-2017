@@ -94,8 +94,13 @@ def get_va(id):
 			try:
 				if vo in os_tpl['@voname']:
 					print "\n\t - Name = %s [v%s] " %(os_tpl['@appname'], os_tpl['@vmiversion'])
-        				print "\t - OCCI ID = %s" %os_tpl['@va_provider_image_id']
-        				print "\t - URI = %s" %os_tpl['@mp_uri']
+					if os_tpl['@va_provider_image_id'].startswith("os_tpl"):
+                                                _os_tpl=os_tpl['@va_provider_image_id'].replace("os_tpl","os")
+                                                print "\t --> OCCI ID = http://schemas.openstack.org/template/%s" \
+                                                %_os_tpl
+                                        else:
+                                                print "\t - OCCI ID = %s" %os_tpl['@va_provider_image_id']
+                                        print "\t - URI = %s" %os_tpl['@mp_uri']
         		except:
         			print ""
 
