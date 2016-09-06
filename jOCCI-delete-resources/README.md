@@ -22,7 +22,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise5.java` source code 
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
-- Deleting block storage
+// - Deleting block storage
 List<String> RESOURCE = Arrays.asList("storage",
     "https://carach5.ics.muni.cz:11443/compute/3918"); // <= Change here!
 ```
