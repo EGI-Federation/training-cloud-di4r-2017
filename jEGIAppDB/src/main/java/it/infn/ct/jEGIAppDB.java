@@ -180,7 +180,10 @@ public class jEGIAppDB
 
 				if (_vo.equals(VO)) {
 	                                System.out.println("\n\t - Name = " + appName + " [v" + version + "]");
-                                	System.out.println("\t - OCCI ID = " + OCCI_ID);
+					if (OCCI_ID.startsWith("os_tpl")) {
+                                                String _OCCI_ID = OCCI_ID.replace("os_tpl","os");
+                                                System.out.println("\t - OCCI ID = http://schemas.openstack.org/template/" + _OCCI_ID);
+                                        } else System.out.println("\t - OCCI ID = " + OCCI_ID);
                         	        System.out.println("\t - URI = " + URI);
 				}
                         }
