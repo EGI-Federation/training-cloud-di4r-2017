@@ -8,7 +8,7 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 Access the maven project
 
-```cd di4r-training/OCCI-create-resources/```
+```cd di4r-training/jOCCI-create-resources/```
 
 Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code to create a new ```compute``` resource:
 ```
