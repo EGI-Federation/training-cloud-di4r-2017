@@ -3,7 +3,7 @@ This is a Java library to render <a href="http://occi-wg.org/about/specification
 
 Detailed documentation is available in the project <a href="https://github.com/EGI-FCTF/jOCCI-api/wiki">wiki</a>.
 
-Access the maven project
+## Access the maven project
 
 ```cd di4r-training/jOCCI-attach-resources/```
 
