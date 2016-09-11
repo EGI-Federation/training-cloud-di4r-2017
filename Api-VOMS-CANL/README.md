@@ -4,6 +4,10 @@ Api-VOMS-CANL is sample creation of a Virtual Organization Membership Service (V
 
 ## Compile and Run
 
+Access the maven project
+
+```cd di4r-training/Api-VOMS-CANL/```
+
 Edit and specify your settigns in the ```src/main/java/it/infn/ct/VOMSProxyInit.java``` source code:
 
 ```
