@@ -5,6 +5,10 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 ## Compile and Run
 
+Access the maven project
+
+```cd di4r-training/OCCI-describe-resources/```
+
 Edit your settings in the `src/main/java/it/infn/ct/Exercise3.java` source code:
 ```
 [..]
