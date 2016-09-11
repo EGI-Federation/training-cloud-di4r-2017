@@ -11,7 +11,7 @@ Edit your settings in the `src/main/java/it/infn/ct/Exercise4.java` source code 
 String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
-// *CREATE* a new virtual appliance (aka VM) with contextualisation (public_key)
+// *CREATE* a new virtual appliance (aka VM) with contextualization (public_key)
 List<String> RESOURCE = Arrays.asList("compute");
 
 List<String> MIXIN =
@@ -20,7 +20,7 @@ Arrays.asList("resource_tpl#medium", // <= Change here!
 
 List<String> CONTEXT =
 Arrays.asList("public_key=file:/home/userX/.ssh/id_rsa.pub", // <= Change here!
-"user_data=file:/home/userX/APIs/jOCCI-create-resources/contextualisation.txt"); // <= Change here!
+"user_data=file:/home/userX/di4r-training/jOCCI-create-resources/contextualization.txt"); // <= Change here!
 
 List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
 
