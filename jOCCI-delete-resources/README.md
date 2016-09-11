@@ -5,6 +5,10 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 ## Compile and Run
 
+Access the maven project
+
+```cd di4r-training/OCCI-delete-resources/```
+
 Edit your settings in the `src/main/java/it/infn/ct/Exercise5.java` source code to delete a ```compute``` resource:
 ```
 [..]
