@@ -4,6 +4,10 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 ## Compile and Run
 
+Access the maven project
+
+```cd di4r-training/jOCCI-dump-model/```
+
 Edit the source code in `src/main/java/it/infn/ct/Exercise1.java` to use your preferred VO and provider endpoint :
 ```
 [..]
