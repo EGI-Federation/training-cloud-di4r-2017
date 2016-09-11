@@ -7,7 +7,7 @@ Detailed documentation is available in the project <a href="https://github.com/E
 
 Access the maven project
 
-```cd di4r-training/OCCI-describe-resources/```
+```cd di4r-training/jOCCI-describe-resources/```
 
 Edit your settings in the `src/main/java/it/infn/ct/Exercise3.java` source code:
 ```
