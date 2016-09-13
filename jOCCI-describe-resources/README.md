@@ -17,7 +17,7 @@ String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
 // [ Available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
 List<String> RESOURCE = Arrays.asList("compute",
-        "https://carach5.ics.muni.cz:11443/compute/74374"); // <= Change here!
+        "https://carach5.ics.muni.cz:11443/compute/75589"); // <= Change here!
 ```
 
 Compile and package with maven:
