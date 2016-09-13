@@ -16,8 +16,8 @@ String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change he
 String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
 List<String> RESOURCE = Arrays.asList("compute",
-    "https://carach5.ics.muni.cz:11443/compute/74479"); // <= Change here!
-    String LINK_RESOURCE = ("https://carach5.ics.muni.cz:11443/storage/3918"); // <= Change here!
+    "https://carach5.ics.muni.cz:11443/compute/75589"); // <= Change here!
+    String LINK_RESOURCE = ("https://carach5.ics.muni.cz:11443/storage/4097"); // <= Change here!
 ```
 
 Compile and package with maven:
