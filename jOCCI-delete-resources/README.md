@@ -17,7 +17,18 @@ String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
 // - Deleting running VM
 List<String> RESOURCE = Arrays.asList("compute",
-    "https://carach5.ics.muni.cz:11443/compute/74479"); // <= Change here!
+    "https://carach5.ics.muni.cz:11443/compute/75589"); // <= Change here!
+```
+
+Edit your settings in the `src/main/java/it/infn/ct/Exercise5.java` source code to delete a ```storage link```:
+```
+[..]
+String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+
+// - Deleting block storage
+List<String> RESOURCE = Arrays.asList("storage",
+    "/link/storagelink/compute_75589_disk_2"); // <= Change here!
 ```
 
 Edit your settings in the `src/main/java/it/infn/ct/Exercise5.java` source code to delete a ```storage``` resource:
@@ -28,7 +39,7 @@ String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
 // - Deleting block storage
 List<String> RESOURCE = Arrays.asList("storage",
-    "https://carach5.ics.muni.cz:11443/storage/3918"); // <= Change here!
+    "https://carach5.ics.muni.cz:11443/storage/4097"); // <= Change here!
 ```
 
 Compile and package with maven:
