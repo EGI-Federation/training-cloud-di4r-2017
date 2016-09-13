@@ -28,7 +28,7 @@ String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 
 // - Deleting block storage
 List<String> RESOURCE = Arrays.asList("storage",
-    "https://carach5.ics.muni.cz:11443/compute/3918"); // <= Change here!
+    "https://carach5.ics.muni.cz:11443/storage/3918"); // <= Change here!
 ```
 
 Compile and package with maven:
