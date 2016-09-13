@@ -30,6 +30,31 @@ Run (you may redirect the output to a file):
 $ java –jar target/jocci-attach-resources-1.0-jar-with-dependencies.jar
 ```
 
+Access the maven project
+
+```cd di4r-training/jOCCI-attach-resources/```
+
+Edit your settings in the `src/main/java/it/infn/ct/Exercise6.java` source code:
+```
+[..]
+List<String> RESOURCE = Arrays.asList("network",
+    "https://controller.ceta-ciemat.es:8787/compute/3488b07d-ade8-427d-ba89-1433497418da"); // <= Change here!
+    
+String LINK_RESOURCE = ("https://controller.ceta-ciemat.es:8787/network/public");
+```
+
+Compile and package with maven:
+```
+$ mvn compile && mvn package
+```
+
+Run (you may redirect the output to a file):
+```
+$ java –jar target/jocci-attach-resources-1.0-jar-with-dependencies.jar
+```
+
+
+
 ## Dependencies
 
 jOCCI-attch-resources uses:
