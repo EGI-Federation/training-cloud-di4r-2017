@@ -15,6 +15,8 @@ Edit and specify your settigns in the ```src/main/java/it/infn/ct/VOMSProxyInit.
 String VONAME = "training.egi.eu"; // <= Change here!
 String VOMS_PROXY_FILEPATH = "/tmp/x509up_u1000"; // <= Change here!
 String VOMS_LIFETIME = "24:00";
+String VOMSES_DIR = "/etc/vomses/";
+String X509_CERT_DIR = "/etc/grid-security/certificates/";
 ```
 
 Compile and package with maven:
