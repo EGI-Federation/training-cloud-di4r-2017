@@ -21,7 +21,7 @@ List<String> RESOURCE = Arrays.asList("compute");
 
 List<String> MIXIN =
 Arrays.asList("resource_tpl#medium", // <= Change here!
-"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl#uuid_training_centos_6_fedcloud_warg_123"); // <= Change here!
+"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl#uuid_training_centos_6_fedcloud_warg_168"); // <= Change here!
 
 List<String> CONTEXT =
 Arrays.asList("public_key=file:/home/userX/.ssh/id_rsa.pub", // <= Change here!
