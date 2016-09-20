@@ -9,11 +9,13 @@ Access the maven project
 
 ```cd di4r-training/jEGIAppDB/```
 
-Edit the source code in `src/main/java/it/infn/ct/jEGIAppDB.java` to use your preferred VO:
+Edit the source code in `src/main/java/it/infn/ct/jEGIAppDB.java` to use your preferred VO (*):
 ```
 [..]
 String VO = "training.egi.eu"; // <= Change here!
 ```
+
+N.B.: For this training event we will use training.egi.eu VO.
 
 Compile and package with maven:
 ```
