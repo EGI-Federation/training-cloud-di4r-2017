@@ -15,7 +15,7 @@ Edit the source code in `src/main/java/it/infn/ct/jEGIAppDB.java` to use your pr
 String VO = "training.egi.eu"; // <= Change here!
 ```
 
-N.B.: For this training event we will use training.egi.eu VO.
+N.B.: For this training event we will use the training.egi.eu VO.
 
 Compile and package with maven:
 ```
