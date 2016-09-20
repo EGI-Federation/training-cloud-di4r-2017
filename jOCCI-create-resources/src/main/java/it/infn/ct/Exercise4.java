@@ -81,7 +81,7 @@ public class Exercise4
 
     public static String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 
-    // *Create* a new virtual appliance (aka VM) with contextualisation (public_key)
+    // *Create* a new virtual appliance (aka VM) with contextualization (public_key)
     public static List<String> RESOURCE = Arrays.asList("storage"); // <= Change here! (e.g.: compute or storage)
 
     public static List<String> MIXIN = 
