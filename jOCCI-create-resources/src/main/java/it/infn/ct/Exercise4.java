@@ -82,7 +82,7 @@ public class Exercise4
     public static String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 
     // *Create* a new virtual appliance (aka VM) with contextualization (public_key)
-    public static List<String> RESOURCE = Arrays.asList("storage"); // <= Change here! (e.g.: compute or storage)
+    public static List<String> RESOURCE = Arrays.asList("compute"); // <= Change here! (e.g.: compute or storage)
 
     public static List<String> MIXIN = 
     Arrays.asList("resource_tpl#medium", // <= Change here!
@@ -91,17 +91,17 @@ public class Exercise4
 
     public static List<String> CONTEXT = 
     	Arrays.asList("public_key=file:/home/ubuntu/.ssh/id_rsa.pub", // <= Change here!
-    	"user_data=file:/home/ubuntu/APIs/jOCCI-create-resources/contextualisation.txt"); // <= Change here!
+    	"user_data=file:/home/userX/di4r-training/jOCCI-create-resources/contextualization.txt"); // <= Change here!
 
-    //public static List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
+    public static List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
     
-    public static String OCCI_PUBLICKEY_NAME = "centos"; // <= Change here!    
+    public static String OCCI_PUBLICKEY_NAME = "centos";
 
 
 
     // *Create* a new storage volume
-    public static List<String> ATTRIBUTES = 
-	Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
+    //public static List<String> ATTRIBUTES = 
+	//Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
     
     public static Boolean verbose = false;
 
