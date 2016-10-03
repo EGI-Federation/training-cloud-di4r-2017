@@ -183,7 +183,6 @@ public class Exercise3
 	// [ Setting preferences here! ]
 	String AUTH = "x509"; 
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
-        //String OCCI_ENDPOINT_HOST = "https://cloud.ifca.es:8787/occi1.1"; // <= Change here!
 
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
         String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
