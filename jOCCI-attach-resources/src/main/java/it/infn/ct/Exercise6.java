@@ -234,7 +234,6 @@ public class Exercise6
 	// [ Setting default preferences ]
 	String AUTH = "x509"; 
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
-        //String OCCI_ENDPOINT_HOST = "http://server4-epsh.unizar.es:8787"; // <= Change here!
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
         String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
 	Boolean verbose = true;
@@ -249,15 +248,6 @@ public class Exercise6
 	/*List<String> RESOURCE = Arrays.asList("storage", 
 	"https://carach5.ics.muni.cz:11443/compute/73206"); // <= Change here!
 	String LINK_RESOURCE = ("/link/storagelink/compute_74020_disk_2"); // <= Change here!*/
-
-        /*List<String> RESOURCE = Arrays.asList("storage", 
-        "http://server4-epsh.unizar.es:8787/compute/a6ae9ae4-98ec-480c-a97d-b7ea960607c6"); // <= Change here!
-        String LINK_RESOURCE = ("/network/public"); // <= Change here!*/
-
-
-	/*List<String> RESOURCE = Arrays.asList("compute", 
-        "http://server4-epsh.unizar.es:8787/compute/1aecc7fa-9ea4-408c-9774-a4f587f2068f"); // <= Change here!
-        String LINK_RESOURCE = ("http://server4-epsh.unizar.es:8787/storage/285b4ab5-ca30-41a0-9911-0b279074c30b");*/
 
 	if (verbose) {
 		System.out.println();
