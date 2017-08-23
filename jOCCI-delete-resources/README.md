@@ -55,7 +55,7 @@ $ java –jar target/jocci-delete-resources-1.0-jar-with-dependencies.jar
 ## Dependencies
 
 jOCCI-delete-resources uses:
-- jocci-api (v0.2.5)
+- jocci-api (v0.2.6)
 - slf4j-jdk14 (v1.7.12)
 
 These are already included in the Maven pom.xml file and automatically downloaded when building.
@@ -72,7 +72,7 @@ You can also add them to your projects with:
     <dependency>
         <groupId>cz.cesnet.cloud</groupId>
         <artifactId>jocci-api</artifactId>
-        <version>0.2.5</version>
+        <version>0.2.6</version>
         <scope>compile</scope>
     </dependency>
 ```
