@@ -172,11 +172,11 @@ public class Exercise6
 				//System.out.println(networkInterfaceLocation);
 	                        client.delete(URI.create(networkInterfaceLocation));
 
-				//IPNetworkInterface ipni = eb.getIPNetworkInterface();
 				NetworkInterface ni = eb.getNetworkInterface();
                 	        ni.setSource(vm_resource);
                         	ni.setTarget(public_network);
 	                        location = client.create(ni);
+
         	                //Thread.sleep(5000);
         		} else System.out.println("No available network found!");
 
@@ -234,20 +234,34 @@ public class Exercise6
 	// [ Setting default preferences ]
 	String AUTH = "x509"; 
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+	//String OCCI_ENDPOINT_HOST = "https://rocci.iihe.ac.be:11443"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://fedcloud-cmdone.egi.cesga.es:11443"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "http://stack-server.ct.infn.it:8787/occi1.1"; // <= Change here!
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-        String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+        String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
 	Boolean verbose = true;
 
 	// [ *Attach* a volume to a VM ]
 	String ACTION = "link"; 
 
-	List<String> RESOURCE = Arrays.asList("storage", 
-	"https://carach5.ics.muni.cz:11443/compute/74374"); // <= Change here!
-	String LINK_RESOURCE = ("https://carach5.ics.muni.cz:11443/storage/3902"); // <= Change here!
+	// CESNET-MetaCloud
+	List<String> RESOURCE = Arrays.asList("compute", 
+	"https://carach5.ics.muni.cz:11443/compute/102559"); // <= Change here!
+	String LINK_RESOURCE = ("https://carach5.ics.muni.cz:11443/storage/7194"); // <= Change here!
 	
 	/*List<String> RESOURCE = Arrays.asList("storage", 
-	"https://carach5.ics.muni.cz:11443/compute/73206"); // <= Change here!
+	"https://carach5.ics.muni.cz:11443/compute/73206"); // <= Change here! (??)
 	String LINK_RESOURCE = ("/link/storagelink/compute_74020_disk_2"); // <= Change here!*/
+
+	// BIFI
+        //List<String> RESOURCE = Arrays.asList("compute", 
+        //"http://server4-eupt.unizar.es:8787/compute/67779542-2fb0-46d6-901f-ffea8028254d"); // <= Change here!
+        //String LINK_RESOURCE = ("/network/public"); // <= Change here!
+
+	//List<String> RESOURCE = Arrays.asList("storage", 
+        //"http://server4-eupt.unizar.es:8787/compute/67779542-2fb0-46d6-901f-ffea8028254d"); // <= Change here!
+        //String LINK_RESOURCE = ("http://server4-eupt.unizar.es:8787/storage/e5102e95-5cde-4db5-bf85-2677c5359203");
+
 
 	if (verbose) {
 		System.out.println();

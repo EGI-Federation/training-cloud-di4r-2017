@@ -77,33 +77,49 @@ public class Exercise4
     public static String ACTION = "create";
     public static String AUTH = "x509";
     public static String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-    public static String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+    public static String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
 
     public static String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+    //public static String OCCI_ENDPOINT_HOST = "http://stack-server.ct.infn.it:8787/occi1.1"; // <= Change here!
+    //public static String OCCI_ENDPOINT_HOST = "https://rocci.iihe.ac.be:11443"; // <= Change here!
 
-    // *Create* a new virtual appliance (aka VM) with contextualization (public_key)
-    public static List<String> RESOURCE = Arrays.asList("compute"); // <= Change here! (e.g.: compute or storage)
+    // *CREATE* a new virtual appliance (aka VM) with contextualisation (public_key)
+    public static List<String> RESOURCE = Arrays.asList("storage"); // <= Change here! (e.g.: compute or storage)
 
-    public static List<String> MIXIN = 
+    // CESNET-MetaCloud [OK]
+    /*public static List<String> MIXIN = 
     Arrays.asList("resource_tpl#medium", // <= Change here!
-    "http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl#uuid_training_jupyter_notebook_centos_6_fedcloud_warg_162"); 
-	// <= Change here!
+    "http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl#uuid_38d42ca1_f4e9_5b5c_98de_37eb2d26301a_warg_default_shared_218");
+    // <= Change here!*/
 
-    public static List<String> CONTEXT = 
-    	Arrays.asList("public_key=file:/home/ubuntu/.ssh/id_rsa.pub", // <= Change here!
-    	"user_data=file:/home/userX/di4r-training/jOCCI-create-resources/contextualization.txt"); // <= Change here!
+    // INFN-CATANIA-STACK [OK]
+    /*public static List<String> MIXIN =
+    Arrays.asList("resource_tpl#2", // <= Change here!
+    "http://schemas.openstack.org/template/os#8faeba11-d85b-4734-b36a-36a1f28a87cb"); // <= Change here!*/
 
-    public static List<String> ATTRIBUTES = Arrays.asList("occi.core.title=VM_title"); // <= Change here!
+    // BEgrid-BELNET [OK]
+    /*public static List<String> MIXIN =
+    Arrays.asList("resource_tpl#medium", // <= Change here!
+    "http://occi.rocci.iihe.ac.be/occi/infrastructure/os_tpl#uuid_38d42ca1_f4e9_5b5c_98de_37eb2d26301a_default_79"); // <== Change here!*/
+
+    /*public static List<String> CONTEXT = 
+    	Arrays.asList("public_key=file:/home/larocca/.ssh/id_rsa.pub", // <= Change here!
+    	"user_data=file:/home/larocca/APIs/jOCCI-create-resources/contextualization.txt"); // <= Change here!*/
+
+    //public static List<String> ATTRIBUTES = Arrays.asList("occi.core.title=Testing"); // <= Change here!
     
-    public static String OCCI_PUBLICKEY_NAME = "centos";
+    //public static String OCCI_PUBLICKEY_NAME = "ubuntu";
 
 
-
-    // *Create* a new storage volume
-    //public static List<String> ATTRIBUTES = 
-	//Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
+    // *CREATE* a new block volume
+    public static List<String> ATTRIBUTES = 
+	Arrays.asList("occi.core.title=VM_volume_1", "occi.storage.size=1"); // <= Change here!
     
-    public static Boolean verbose = false;
+    public static String OCCI_PUBLICKEY_NAME = "";
+    public static List<String> CONTEXT = new ArrayList<String>();
+    public static List<String> MIXIN = new ArrayList<String>();
+    
+    public static Boolean verbose = true;
 
 
     // Creating a new VM in the OCCI_ENDPOINT_HOST cloud resource

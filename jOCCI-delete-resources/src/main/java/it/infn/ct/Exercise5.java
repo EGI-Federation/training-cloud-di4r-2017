@@ -64,11 +64,11 @@ public class Exercise5
 		if ((properties.getProperty("OCCI_RESOURCE_ID").contains("storage")) ||
                    (properties.getProperty("OCCI_RESOURCE_ID").contains("storagelink")))
                 {
-                        System.out.println("[+] Delete/detach the volume storage");
-                        //boolean status = client.delete(URI.create(properties.getProperty("OCCI_RESOURCE_ID")));
+                        System.out.println("[+] Clean up!");
+                        boolean status = client.delete(URI.create(properties.getProperty("OCCI_RESOURCE_ID")));
                         client.delete(URI.create(properties.getProperty("OCCI_RESOURCE_ID")));
-                        //if (status) System.out.println("[-] Deleted: OK");
-                        //else System.out.println("[-] Deleted: FAIL");
+                        if (status) System.out.println("[-] Deleted: OK");
+                        else System.out.println("[-] Deleted: FAIL");
                 } // end 'storage'
 
 		else {
@@ -103,26 +103,77 @@ public class Exercise5
     {
 	String AUTH = "x509"; 
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-        String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+        String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
         
 	String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+	//String OCCI_ENDPOINT_HOST = "http://stack-server.ct.infn.it:8787/occi1.1"; // <= Change here!
+	//String OCCI_ENDPOINT_HOST = "https://rocci.iihe.ac.be:11443"; // <= Change here!
 	
 	Boolean verbose = true;
 
 	// [ Deleting available resources ]
 	String ACTION = "delete";
 
+	// CESNET-MetaCloud
         // - Deleting running VM
 	List<String> RESOURCE = Arrays.asList("compute", 
-	"https://carach5.ics.muni.cz:11443/compute/74020"); // <= Change here!
-	
-        // - Deleting volume
+	"https://carach5.ics.muni.cz:11443/compute/102559"); // <= Change here!
+
+        // - Deleting block storage
 	//List<String> RESOURCE = Arrays.asList("storage", 
-	//"https://carach5.ics.muni.cz:11443/storage/3732"); // <= Change here!
+	//"https://carach5.ics.muni.cz:11443/storage/4263"); // <= Change here!
 
 	// - Deleting storage link
+	//List<String> RESOURCE = Arrays.asList("storage", 
+	//"/link/storagelink/compute_102559_disk_2"); // <= Change here!
+
+	
+	// INFN-CATANIA-STACK
+        // - Deleting running VM
+        //List<String> RESOURCE = Arrays.asList("compute",
+        //"http://stack-server.ct.infn.it:8787/occi1.1/compute/d9932cb6-b301-4a71-a52f-eed9f03694f2");
+
+
+	// BEgrid-BELNET
+	// - Deleting running VM
+	//List<String> RESOURCE = Arrays.asList("compute", 
+	//"https://rocci.iihe.ac.be:11443/compute/13598"); // <= Change here!
+
+        // - Deleting block storage
 	/*List<String> RESOURCE = Arrays.asList("storage", 
-	"/link/storagelink/compute_74020_disk_2"); // <= Change here!*/
+	"https://occi.nebula.finki.ukim.mk:443/storage/629"); // <= Change here!*/
+
+        // - Deleting storage link
+	//List<String> RESOURCE = Arrays.asList("storage", 
+	//"/link/storagelink/compute_15238_disk_2"); // <= Change here!
+
+
+
+	// BIFI
+        //List<String> RESOURCE = Arrays.asList("compute",
+        //"http://server4-eupt.unizar.es:8787/compute/67779542-2fb0-46d6-901f-ffea8028254d"); // <= Change here!
+
+	//List<String> RESOURCE = Arrays.asList("storage", // <= Detach the storage link!
+        //"/storage/link/67779542-2fb0-46d6-901f-ffea8028254d_e5102e95-5cde-4db5-bf85-2677c5359203");
+	
+	//List<String> RESOURCE = Arrays.asList("storage", // <= Delete block storage
+        //"http://server4-eupt.unizar.es:8787/storage/e5102e95-5cde-4db5-bf85-2677c5359203");
+
+
+	// IFCA-LCG2
+	/*List<String> RESOURCE = Arrays.asList("compute",
+        "https://cloud.ifca.es:8787/occi1.1/compute/1d29edf9-44ba-40b0-bd05-f39a843959b6");*/
+
+
+	// CETA-GRID
+	/*List<String> RESOURCE = Arrays.asList("storage", // <= Delete the storage link
+        "/storage/link/142f103a-0ad3-4d39-b165-8f7c1fdc28bd_11f02030-32b1-411c-b885-27013ea9be41");*/
+
+	/*List<String> RESOURCE = Arrays.asList("storage", // <= Delete the block storage
+	"https://controller.ceta-ciemat.es:8787/storage/11f02030-32b1-411c-b885-27013ea9be41");*/
+
+	//List<String> RESOURCE = Arrays.asList("compute",
+	//"https://controller.ceta-ciemat.es:8787/compute/142f103a-0ad3-4d39-b165-8f7c1fdc28bd");
 
 	if (verbose) {
 		System.out.println();

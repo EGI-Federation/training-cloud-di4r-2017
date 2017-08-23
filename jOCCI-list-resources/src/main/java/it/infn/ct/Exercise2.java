@@ -107,14 +107,21 @@ public class Exercise2
 	// [ Setting preferences here! ]
 	String AUTH = "x509"; 
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://rocci.iihe.ac.be:11443"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://fedcloud-cmdone.egi.cesga.es:11443"; // <= Change here!
+	//String OCCI_ENDPOINT_HOST = "http://stack-server.ct.infn.it:8787/occi1.1"; // <= Change here!
+
+        //String OCCI_ENDPOINT_HOST = "http://server4-eupt.unizar.es:8787/"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://cloud.ifca.es:8787/occi1.1"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://controller.ceta-ciemat.es:8787/"; // <= Change here!
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-        String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+        String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
 	Boolean verbose = true;
 
 	String ACTION = "list"; // [ *Listing* ] available resources 
 
 	// Possible resources are = os_tpl, resource_tpl, compute, storage and network
-        List<String> RESOURCE = Arrays.asList("compute"); // <= Change here!
+        List<String> RESOURCE = Arrays.asList("os_tpl"); // <= Change here!
 	
 	if (verbose) {
 		System.out.println();

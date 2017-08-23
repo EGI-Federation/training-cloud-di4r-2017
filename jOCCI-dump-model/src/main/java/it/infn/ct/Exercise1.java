@@ -107,7 +107,7 @@ public class Exercise1
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
 
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-        String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+        String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
 	Boolean verbose = true;
 
 	// [ Show available dump models for the host ]

@@ -183,14 +183,17 @@ public class Exercise3
 	// [ Setting preferences here! ]
 	String AUTH = "x509"; 
         String OCCI_ENDPOINT_HOST = "https://carach5.ics.muni.cz:11443"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "http://stack-server.ct.infn.it:8787/occi1.1"; // <= Change here!
+        //String OCCI_ENDPOINT_HOST = "https://rocci.iihe.ac.be:11443"; // <= Change here!
 
         String TRUSTED_CERT_REPOSITORY_PATH = "/etc/grid-security/certificates";
-        String PROXY_PATH = "/tmp/x509up_u1000"; // <= Change here!
+        String PROXY_PATH = "/tmp/x509up_u1041"; // <= Change here!
 
 	Boolean verbose = true;
 
 	String ACTION = "describe";	
 
+	// CESNET-MetaCloud
 	// [ *Describing* available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
 	//List<String> RESOURCE = Arrays.asList("os_tpl",
 	//"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl#uuid_training_centos_6_fedcloud_warg_123"); // <= Change here!
@@ -198,13 +201,43 @@ public class Exercise3
 	//List<String> RESOURCE = Arrays.asList("resource_tpl", "medium");
 
 	//List<String> RESOURCE = Arrays.asList("storage",
-	//"https://carach5.ics.muni.cz:11443/storage/3902"); // <= Change here!
+	//"https://carach5.ics.muni.cz:11443/storage/3155"); // <= Change here!
 
 	//List<String> RESOURCE = Arrays.asList("network",
 	//"https://carach5.ics.muni.cz:11443/network/6"); // <= Change here!
 
 	List<String> RESOURCE = Arrays.asList("compute",
-	"https://carach5.ics.muni.cz:11443/compute/74374"); // <= Change here!
+	"https://carach5.ics.muni.cz:11443/compute/102559"); // <= Change here!
+	
+
+	// INFN-CATANIA-STACK
+	// [ *Describing* available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
+	//List<String> RESOURCE = Arrays.asList("compute",
+	//"http://stack-server.ct.infn.it:8787/occi1.1/compute/d9932cb6-b301-4a71-a52f-eed9f03694f2");
+
+
+	// BEgrid-BELNET
+	// [ *Describing* available resources (e.g. os_tpl, resource_tpl, compute, storage and network) ]
+	//List<String> RESOURCE = Arrays.asList("compute",
+        //"https://rocci.iihe.ac.be:11443/compute/13598"); // <= Change here!
+
+
+	// IFCA-LCG2
+	/*List<String> RESOURCE = Arrays.asList("compute",
+	"https://cloud.ifca.es:8787/occi1.1/compute/1d29edf9-44ba-40b0-bd05-f39a843959b6");*/
+
+	
+	// BIFI
+	/*List<String> RESOURCE = Arrays.asList("compute",
+	"http://server4-eupt.unizar.es:8787/compute/67779542-2fb0-46d6-901f-ffea8028254d"); */
+
+	/*List<String> RESOURCE = Arrays.asList("os_tpl",
+        "http://schemas.openstack.org/template/os#95a46c41-6f88-4111-8823-566d734b6d17");*/
+
+
+        // CETA-GRID
+	//List<String> RESOURCE = Arrays.asList("compute", 
+	//"https://controller.ceta-ciemat.es:8787/compute/017be51d-3d75-48b2-be76-7f0ab961db21");
 	
 	if (verbose) {
 		System.out.println();
